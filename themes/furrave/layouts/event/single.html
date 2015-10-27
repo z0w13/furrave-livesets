@@ -1,0 +1,34 @@
+{{ partial "header" . }}
+<h1><span class="alt1">Event</span> //  {{ .Title }}</h1>
+<table class="ui inverted striped table">
+  {{ range .Site.Data.set }}
+    {{ if eq $.Slug .event }}
+      {{ $dj := index $.Site.Data.dj .dj }}
+      <tr>
+        <td>{{ index .timeslot 0 }} - {{ index .timeslot 1 }}</td>
+        <td>
+          {{ if $dj.hide }}
+            {{ $dj.name }}
+          {{ else }}
+            <a href="/dj/{{ .dj }}/">{{ $dj.name }}</a>
+          {{ end }}
+        </td>
+        <td>
+          {{ if isset . "download" }}
+            <a href="{{ .download }}">Download</a>
+          {{ else }}
+            N/A
+          {{ end }}
+        </td>
+      </tr>
+      {{ if isset . "player" }}
+        <tr>
+          <td colspan="3">
+            {{ .player | safeHTML }}
+          </td>
+        </tr>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+</table>
+{{ partial "footer" . }}

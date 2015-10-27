@@ -1,0 +1,10 @@
+dj: ihaveahat
+event: furrave2
+timeslot: ["00:30", "02:15"]
+download: "https://dl.dropboxusercontent.com/s/e7vvsfq9n0qvn9w/DJ%20IHaveAHat%20-%20Live%20%40%20Furrave%202%20%280030-0215%29.mp3?dl=0"
+player: '<iframe src="https://www.mixcloud.com/widget/iframe/?embed_type=widget_standard&amp;embed_uuid=20b3576d-3b61-42b0-b7b2-b151181b5e00&amp;feed=https%3A%2F%2Fwww.mixcloud.com%2Fihaveahat%2Fdj-ihaveahat-live-furrave-2-0030-0215%2F&amp;hide_cover=1&amp;hide_tracklist=1&amp;mini=1&amp;replace=0" frameborder="0" height="60" width="100%"></iframe>'
+genres:
+  - House
+  - Hardcore
+  - Drum & Bass
+  - Hardstyle

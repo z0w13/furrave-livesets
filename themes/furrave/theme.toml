@@ -1,0 +1,12 @@
+name = "Furrave Livesets"
+license = "MIT"
+licenselink = "https://github.com/lynxpebbles/furrave/blob/master/LICENSE.md"
+description = "Theme for the Furrave Livesets website"
+homepage = "http://siteforthistheme.com/"
+tags = ["", ""]
+features = ["", ""]
+min_version = 0.14
+
+[author]
+  name = "LynxPebbles"
+  homepage = "http://lynxpebbles.me"

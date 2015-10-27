@@ -1,0 +1,9 @@
+dj: catify
+event: furrave5
+timeslot: ["??:??", "2:15"]
+download: "http://catify.net/mixes/furrave5.mp3"
+player: '<iframe src="https://www.mixcloud.com/widget/iframe/?embed_type=widget_standard&amp;embed_uuid=fc89a2d2-af2c-4168-94c2-402a7048afa0&amp;feed=https%3A%2F%2Fwww.mixcloud.com%2FCatify%2Ffurrave-5-liveset%2F&amp;hide_cover=1&amp;hide_tracklist=1&amp;mini=1&amp;replace=0" frameborder="0" height="60" width="100%"></iframe>'
+genres:
+  - Electro House
+  - Complextro
+  - House

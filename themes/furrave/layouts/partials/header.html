@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Furrave :: Livesets</title>
+    <meta charset="UTF-8" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/semantic.css" />
+    <style>
+      body {
+        background: url('/img/background.jpg');
+      }
+
+      #logo {
+        margin-bottom: 5em;
+        text-align: center;
+      }
+
+      .alt1 {
+        color: #ec5538;
+      }
+
+      #logo img {
+        padding-left: 13%;
+        max-width: 100%;
+      }
+
+      #sidebar, #content, #logo {
+        color: white;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 1.7em;
+      }
+
+      #sidebar a, #sidebar h2 {
+        font-weight: normal;
+        font-family: Impact;
+        letter-spacing: 1.5px;
+      }
+
+      #sidebar a {
+        color: white;
+      }
+
+      #sidebar a:hover {
+        color: #EEE;
+        text-decoration: underline;
+      }
+
+      #sidebar {
+        font-size: 20px;
+        line-height: 130%;
+      }
+
+      #sidebar ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      #sidebar h2 {
+        color: #ec5538;
+        font-size: 24px;
+        margin-bottom: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="logo">
+      <img src="/img/logo.png" alt="Furrave :: Livesets">
+    </div>
+    <div class="ui container">
+      <div class="ui stackable grid">
+        <div class="ui row">
+          <div class="ui four wide column" id="sidebar">
+            <h2>DJs</h2>
+            <ul>
+              {{ range .Site.Menus.djs }}
+                <li><a href="{{.URL}}">{{ .Name }}</a></li>
+              {{ end }}
+            </ul>
+            <h2>Editions</h2>
+            <ul>
+              {{ range .Site.Menus.events }}
+                <li><a href="{{.URL}}">{{ .Name }}</a></li>
+              {{ end }}
+            </ul>
+          </div>
+          <div class="ui column"></div>
+          <div class="ui eleven wide column" id="content">

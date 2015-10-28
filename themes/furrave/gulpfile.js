@@ -12,28 +12,46 @@ gulp.task('build-ui', build);
 gulp.task('clean-ui', clean);
 
 gulp.task('clean', ['clean-ui']);
-gulp.task('build', ['concat-js', 'concat-css', 'copy-theme']);
+gulp.task('build', ['concat-js', 'concat-css', 'copy-theme', 'copy-static']);
 
-gulp.task('concat-css', ['build-ui'], function() {
-  return gulp.src([
+var config = {
+  static_files: [
+    'components/site/static/**',
+  ],
+  js_files: [
+    'components/semantic/dist/semantic.js',
+  ],
+  css_files: [
     'components/semantic/dist/semantic.css',
     'components/site/site.css',
-  ]).pipe(concat('site.css'))
-    .pipe(gulp.dest('static/assets'));
+  ],
+
+  asset_output: 'static/assets',
+  js_output: 'site.js',
+  css_output: 'site.css',
+
+  semantic_path: 'components/semantic',
+  semantic_theme: 'default',
+}
+
+gulp.task('concat-css', ['build-ui'], function() {
+  return gulp.src(config.css_files)
+    .pipe(concat(config.css_output))
+    .pipe(gulp.dest(config.asset_output));
 });
 
 gulp.task('concat-js', ['build-ui'], function() {
-
-  return merge(
-    jquery.src(),
-    gulp.src([
-      'components/semantic/dist/semantic.js',
-    ])
-  ).pipe(concat('site.js'))
-   .pipe(gulp.dest('static/assets'));
+  return merge(jquery.src(), gulp.src(config.js_files))
+    .pipe(concat(config.js_output))
+    .pipe(gulp.dest(config.asset_output));
 });
 
 gulp.task('copy-theme', ['build-ui'], function() {
-  return gulp.src('semantic/dist/themes/default/**')
-    .pipe(gulp.dest('static/assets/themes/default'));
+  return gulp.src(config.semantic_path + '/themes/' + config.semantic_theme + '/**')
+    .pipe(gulp.dest(config.asset_output + '/themes/' + config.semantic_theme));
+});
+
+gulp.task('copy-static', function() {
+  return gulp.src(config.static_files)
+    .pipe(gulp.dest(config.asset_output));
 });

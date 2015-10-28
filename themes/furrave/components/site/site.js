@@ -1,3 +1,5 @@
 $(document).ready(function() {
-  $('video,audio').mediaelementplayer({});
+  $('video,audio').mediaelementplayer({
+    alwaysShowHours: true,
+  });
 });

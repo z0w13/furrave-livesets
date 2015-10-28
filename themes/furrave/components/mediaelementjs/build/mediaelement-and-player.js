@@ -3044,7 +3044,7 @@ if (typeof jQuery != 'undefined') {
 				// outer area
 				rail.width(railWidth);
 				// dark space
-				total.width(railWidth - (total.outerWidth(true) - total.width()) - 1);
+				total.width(railWidth - (total.outerWidth(true) - total.width()));
 
 				if (lastControl.css('position') != 'absolute') {
 					lastControlPosition = lastControl.length ? lastControl.position() : null;

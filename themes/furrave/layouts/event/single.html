@@ -1,5 +1,21 @@
 {{ partial "header" . }}
+{{ $event := index .Site.Data.event .Slug }}
 <h1><span class="alt1">Event</span> //  {{ .Title }}</h1>
+<table class="ui inverted striped collapsing table">
+  {{ if $event.date }}
+    <tr>
+      <td>Date:</td>
+      <td>{{ $event.date }}</td>
+    </tr>
+  {{ end }}
+  {{ if $event.date }}
+    <tr>
+      <td>Time:</td>
+      <td>{{ index $event.time 0 }} - {{ index $event.time 1 }}</td>
+    </tr>
+  {{ end }}
+</table>
+<h2>Livesets</h2>
 <table class="ui inverted striped table">
   {{ range .Site.Data.set }}
     {{ if eq $.Slug .event }}

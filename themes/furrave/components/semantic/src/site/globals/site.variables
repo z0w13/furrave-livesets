@@ -1,0 +1,5 @@
+/*******************************
+     User Global Variables
+*******************************/
+@secondaryColor : #EC5538;
+@linkColor      : #EC5538;

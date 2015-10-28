@@ -1,4 +1,3 @@
 node_modules
 public
-themes/furrave/semantic/dist
-themes/furrave/static/assets/semantic
+themes/furrave/static

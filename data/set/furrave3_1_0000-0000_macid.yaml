@@ -1,5 +1,7 @@
 dj: macid
 event: furrave3
 timeslot: ["??:??", "??:??"]
-player: '<object height="81" width="100%"><param name="movie" value="http://player.soundcloud.com/player.swf?color=ec5538&amp;theme_color=25292c&amp;url=https://soundcloud.com/dj-macid/macid-live-dutchfurrave-nl&amp;g=bb"><param name="allowscriptaccess" value="always"><embed allowscriptaccess="always" src="http://player.soundcloud.com/player.swf?color=ec5538&amp;theme_color=25292c&amp;url=https://soundcloud.com/dj-macid/macid-live-dutchfurrave-nl&amp;g=bb" type="application/x-shockwave-flash" height="81" width="100%"></object>'
+player: 
+  type: soundcloud
+  id: '170878487'
 download: 'https://api.soundcloud.com/tracks/170878487/download?client_id=02gUJC0hH2ct1EGOcYXQIzRFU91c72Ea'

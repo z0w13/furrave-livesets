@@ -2,7 +2,9 @@ dj: ihaveahat
 event: furrave2
 timeslot: ["22:30", "23:30"]
 download: "https://dl.dropboxusercontent.com/s/favwajabb2bo27d/DJ%20IHaveAHat%20-%20Live%20%40%20Furrave%202%20%282230-2330%29.mp3?dl=0"
-player: '<iframe src="https://www.mixcloud.com/widget/iframe/?embed_type=widget_standard&amp;embed_uuid=27d8cea5-d661-4f97-b8c5-d7e00f1d3a74&amp;feed=https%3A%2F%2Fwww.mixcloud.com%2Fihaveahat%2Fdj-ihaveahat-live-furrave-2-2230-2330%2F&amp;hide_cover=1&amp;hide_tracklist=1&amp;mini=1&amp;replace=0" frameborder="0" height="60" width="100%"></iframe>'
+player: 
+  type: mixcloud
+  url: 'https://www.mixcloud.com/ihaveahat/dj-ihaveahat-live-furrave-2-2230-2330/'
 genres:
   - House
   - Handsup

@@ -1,3 +1,7 @@
 dj: hawaiiwolf
 event: furrave4
 timeslot: ["??:??", "??:??"]
+player:
+  type: direct
+  url: 'http://hawaiiwolf.com/wp-content/uploads/2015/10/DJ_HawaiiWolf_-_Furrave_NL_4_Exclusive_Mix.mp3'
+download: 'http://hawaiiwolf.com/wp-content/uploads/2015/10/DJ_HawaiiWolf_-_Furrave_NL_4_Exclusive_Mix.mp3'

@@ -1,5 +1,7 @@
 dj: ihaveahat
 event: furrave-summer-is-magic
 download: "https://dl.dropboxusercontent.com/s/q5mw1yz1oc77c39/DJ%20IHaveAHat%20-%20Live%20%40%20Furrave%20-%20Summer%20is%20Magic%20%282014%29.mp3?dl=0"
-player: '<iframe src="https://www.mixcloud.com/widget/iframe/?embed_type=widget_standard&amp;embed_uuid=e5b63915-628d-45a2-883f-7cf214e3676e&amp;feed=https%3A%2F%2Fwww.mixcloud.com%2Fihaveahat%2Fdj-ihaveahat-live-furrave-summer-is-magic-2014%2F&amp;hide_cover=1&amp;hide_tracklist=1&amp;mini=1&amp;replace=0" frameborder="0" height="60" width="100%"></iframe>'
+player: 
+  type: mixcloud
+  url: 'https://www.mixcloud.com/ihaveahat/dj-ihaveahat-live-furrave-summer-is-magic-2014/'
 timeslot: ["??:??", "??:??"]

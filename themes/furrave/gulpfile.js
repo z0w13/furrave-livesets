@@ -18,10 +18,19 @@ var config = {
   static_files: [
     'components/site/static/**',
   ],
+  mejs_files: [
+    'components/mediaelementjs/build/*.png',
+    'components/mediaelementjs/build/*.svg',
+    'components/mediaelementjs/build/*.gif',
+    'components/mediaelementjs/build/flashmediaelement.swf',
+  ],
   js_files: [
     'components/semantic/dist/semantic.js',
+    'components/site/site.js',
+    'components/mediaelementjs/build/mediaelement-and-player.js',
   ],
   css_files: [
+    'components/mediaelementjs/build/mediaelementplayer.css',
     'components/semantic/dist/semantic.css',
     'components/site/site.css',
   ],
@@ -51,7 +60,12 @@ gulp.task('copy-theme', ['build-ui'], function() {
     .pipe(gulp.dest(config.asset_output + '/themes/' + config.semantic_theme));
 });
 
-gulp.task('copy-static', function() {
+gulp.task('copy-mejs', function() {
+  return gulp.src(config.mejs_files)
+    .pipe(gulp.dest(config.asset_output + '/mejs'));
+});
+
+gulp.task('copy-static', ['copy-mejs'], function() {
   return gulp.src(config.static_files)
     .pipe(gulp.dest(config.asset_output));
 });

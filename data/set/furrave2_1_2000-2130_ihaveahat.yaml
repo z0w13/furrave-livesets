@@ -2,7 +2,9 @@ dj: ihaveahat
 event: furrave2
 timeslot: ["20:00", "21:30"]
 download: "https://dl.dropboxusercontent.com/s/ijfdiweko9xz7ye/DJ%20IHaveAHat%20-%20Live%20%40%20Furrave%202%20%282000-2130%29.mp3?dl=0"
-player: '<iframe src="https://www.mixcloud.com/widget/iframe/?embed_type=widget_standard&amp;embed_uuid=936418d8-8bc2-4e4b-8b10-6759786fb04f&amp;feed=https%3A%2F%2Fwww.mixcloud.com%2Fihaveahat%2Fdj-ihaveahat-live-furrave-2-2000-2130%2F&amp;hide_cover=1&amp;hide_tracklist=1&amp;mini=1&amp;replace=0&amp;stylecolor=d9d617" frameborder="0" height="60" width="100%"></iframe>'
+player: 
+  type: mixcloud
+  url: 'https://www.mixcloud.com/ihaveahat/dj-ihaveahat-live-furrave-2-2000-2130/'
 genres:
   - Electro House
   - Complextro

@@ -1,5 +1,7 @@
 dj: ihaveahat
 event: furrave1
 download: "https://dl.dropboxusercontent.com/s/fz4o9dbgcwxnzdm/Furrave%201.mp3?dl=0"
-player: '<iframe src="https://www.mixcloud.com/widget/iframe/?embed_type=widget_standard&amp;embed_uuid=c589851a-b6b2-4cce-b5c4-32671f7442d3&amp;feed=https%3A%2F%2Fwww.mixcloud.com%2Fihaveahat%2Ffurrave-2013-liveset%2F&amp;hide_cover=1&amp;hide_tracklist=1&amp;mini=1&amp;replace=0" frameborder="0" height="60" width="100%"></iframe>'
+player: 
+  type: mixcloud
+  url: https://www.mixcloud.com/ihaveahat/furrave-2013-liveset/
 timeslot: ["??:??", "??:??"]

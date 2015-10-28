@@ -1,5 +1,11 @@
 {{ partial "header" . }}
+{{ $dj := index .Site.Data.dj .Slug }}
 <h1><span class="alt1">DJ</span> // {{ .Title }}</h1>
+{{ if $dj.site }}
+  <a href="{{ $dj.site }}">
+    <i class="world icon"></i>
+  </a>
+{{ end }}
 <table class="ui inverted striped table">
   {{ range .Site.Data.set }}
     {{ if eq $.Slug .dj }}

@@ -1,6 +1,6 @@
 dj: catify
 event: furrave5
-timeslot: ["01:00", "2:15"]
+timeslot: ["01:00", "02:15"]
 download: "http://catify.net/mixes/furrave5.mp3"
 player: 
   type: mixcloud

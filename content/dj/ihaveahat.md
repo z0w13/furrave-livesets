@@ -1,5 +1,5 @@
 ---
-title: IHaveAHat
+title: DJ IHaveAHat
 menu: "djs"
 slug: ihaveahat
 ---

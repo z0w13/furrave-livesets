@@ -1,0 +1,7 @@
+dj: code-y
+event: furrave6
+timeslot: ["23:00", "00:30"]
+download: "https://pebbles.stackstorage.com/index.php/s/B58e0jgYD3MsCyt/download"
+player:
+  type: direct
+  url: "https://pebbles.stackstorage.com/index.php/s/B58e0jgYD3MsCyt/download"

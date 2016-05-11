@@ -24,7 +24,7 @@ body {
 
 #sidebar a, #sidebar h2 {
   font-weight: normal;
-  font-family: Impact;
+  font-family: 'Oswald';
   letter-spacing: 1.5px;
 }
 
@@ -51,4 +51,10 @@ body {
   color: #ec5538;
   font-size: 24px;
   margin-bottom: 0.5rem;
+}
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+.mejs-controls .mejs-button button:focus {
+	outline: 0 !important;
 }

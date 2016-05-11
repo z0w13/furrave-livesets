@@ -48,7 +48,7 @@ This includes multiple codecs for various browsers (H.264 for IE9+, Safari, and 
 ```
 
 #### Optional: Browsers with JavaScript disabled
-In very rare cases, you might have an non-HTML5 browser with Flash turned on and JavaScript turned off. In that specific case, you can also include the Flash `<object>` code.
+In very rare cases, you might have a non-HTML5 browser with Flash turned on and JavaScript turned off. In that specific case, you can also include the Flash `<object>` code.
 ```html
 <video width="320" height="240" poster="poster.jpg" controls="controls" preload="none">
 	<source type="video/mp4" src="myvideo.mp4" />
@@ -117,4 +117,4 @@ To compile the changes
 1. Install `node.js` with `npm` https://nodejs.org/
 2. At the command prompt type `npm install` which will download all the necessary tools
 3. Type `grunt` to build MediaElement.js
-4. To compile the Flash swf, you'll need to install Flex 4.6. See instructions in grunt.js for details.
+4. To compile the Flash swf, you'll need to install Flex 4.6. See instructions in Gruntfile.js for details.

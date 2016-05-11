@@ -1,6 +1,8 @@
 {{ if isset . "player" }}
   {{ if eq .player.type "direct" }}
-    <audio width="100%" src="{{ .player.url }}" controls preload="metadata"/>
+    <audio width="100%" controls preload="metadata">
+      <source type="audio/mpeg" src="{{ .player.url }}" />
+    </audio>
   {{ else if eq .player.type "soundcloud" }}
     <iframe 
       width="100%" 

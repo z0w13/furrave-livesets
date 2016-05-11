@@ -62,7 +62,7 @@ gulp.task('copy-theme', ['build-ui'], function() {
 
 gulp.task('copy-mejs', function() {
   return gulp.src(config.mejs_files)
-    .pipe(gulp.dest(config.asset_output + '/mejs'));
+    .pipe(gulp.dest(config.asset_output));
 });
 
 gulp.task('copy-static', ['copy-mejs'], function() {

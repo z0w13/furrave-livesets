@@ -1,0 +1,7 @@
+dj: emmerik
+event: furrave6
+timeslot: ["20:00", "21:30"]
+download: "https://pebbles.stackstorage.com/index.php/s/W3E78OlLEVGN8Eu/download"
+player:
+  type: direct
+  url: "https://pebbles.stackstorage.com/index.php/s/W3E78OlLEVGN8Eu/download"

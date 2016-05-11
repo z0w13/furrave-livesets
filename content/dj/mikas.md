@@ -1,5 +1,5 @@
 ---
-title: Mikas
+title: DJ Mikas
 menu: "djs"
 slug: mikas
 ---

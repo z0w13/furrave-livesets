@@ -3,5 +3,5 @@ event: furrave6
 timeslot: ["00:30", "02:00"]
 download: "https://pebbles.stackstorage.com/index.php/s/YBW0cvkOwSLNxeK/download"
 player:
-  type: direct
-  url: "https://pebbles.stackstorage.com/index.php/s/YBW0cvkOwSLNxeK/download"
+  type: mixcloud
+  url: "https://www.mixcloud.com/Dutchfurrave/dutch-furrave-6-dj-catify/"

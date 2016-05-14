@@ -12,7 +12,7 @@ $(document).ready(function() {
     $(".tracklist").removeClass("expanded");
     if (!expanded) {
       $tracklist.addClass("expanded");
-      $(window).scrollTop($anchor.offset().top);
+      $(window).scrollTop($anchor.offset().top - 10);
     }
     return false;
   });

@@ -2,9 +2,35 @@ body {
   background: url('img/background.jpg');
 }
 
+.livesets td.links, .livesets td.links a {
+  white-space: nowrap;
+}
+.livesets td.links {
+  width: 1%;
+  text-align: right;
+}
+
+.tracklist {
+  display: none;
+}
+.tracklist.expanded {
+  display: table-cell;
+}
+.tracklist ol {
+  padding-left: 0;
+}
+.tracklist li {
+  list-style: inside decimal;
+}
+
 #logo {
   margin-bottom: 5em;
   text-align: center;
+}
+
+.more-info {
+  height: 0px;
+  transition height 0.5s ease;
 }
 
 .alt1 {
@@ -22,10 +48,10 @@ body {
   padding: 1.7em;
 }
 
-#sidebar a, #sidebar h2 {
-  font-weight: normal;
+h1, h2, #sidebar a {
   font-family: 'Oswald';
   letter-spacing: 1.5px;
+  font-weight: normal;
 }
 
 #sidebar a {
@@ -57,4 +83,8 @@ body {
 ::-moz-focus-inner {border:0;}
 .mejs-controls .mejs-button button:focus {
 	outline: 0 !important;
+}
+
+audio {
+  width: 100%;
 }

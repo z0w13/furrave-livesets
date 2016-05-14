@@ -1,0 +1,51 @@
+<h2>Livesets</h2>
+<table class="ui inverted table livesets">
+  {{ range $idx, $elem := .data.set }}
+    {{ if or (and (eq $.type "dj") (eq $.slug .dj)) (and (eq $.type "event") (eq $.slug .event)) }}
+      {{ $dj := index $.data.dj .dj }}
+      {{ $event := index $.data.event .event }}
+      <tr>
+        {{ if eq $.type "dj" }}
+          <td><a href="/event/{{ .event }}/">{{ $event.title }}</a></td>
+        {{ end }}
+        <td>{{ index .timeslot 0 }} - {{ index .timeslot 1 }}</td>
+        {{ if eq $.type "event" }}
+          <td>
+            {{ if $dj.hide }}
+              {{ $dj.name }}
+            {{ else }}
+              <a href="/dj/{{ .dj }}/">{{ $dj.name }}</a>
+            {{ end }}
+          </td>
+        {{ end }}
+        <td class="links">
+          {{ if isset . "tracklist" }}
+            <a data-id="{{ $idx }}" class="toggle-tracklist" href="#"><i class="list icon"></i></a>
+          {{ end }}
+          {{ if isset . "download" }}
+            <a href="{{ .download }}"><i class="download icon"></i></a>
+          {{ end }}
+        </td>
+      </tr>
+      {{ if isset . "player" }}
+        <tr>
+          <td colspan="3">
+            {{ partial "player" . }}
+          </td>
+        </tr>
+      {{ end }}
+      {{ if isset . "tracklist" }}
+        <tr>
+          <td id="tracklist-{{ $idx }}" colspan="3" class="tracklist">
+            <h2>Tracklist</h2>
+            <ol>
+              {{ range $track := .tracklist }}
+                <li>{{ $track }}</li>
+              {{ end }}
+            </ol>
+          </td>
+        </tr>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+</table>

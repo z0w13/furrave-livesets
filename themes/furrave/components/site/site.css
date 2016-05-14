@@ -42,10 +42,14 @@ body {
   max-width: 100%;
 }
 
-#sidebar, #content, #logo {
+#sidebar, #content, #logo, #footer{
   color: white;
   background: rgba(0, 0, 0, 0.8);
   padding: 1.7em;
+}
+
+#footer {
+  text-align: center;
 }
 
 h1, h2, #sidebar a {

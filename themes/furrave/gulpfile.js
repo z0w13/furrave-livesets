@@ -56,8 +56,8 @@ gulp.task('concat-js', ['build-ui'], function() {
 });
 
 gulp.task('copy-theme', ['build-ui'], function() {
-  gulp.src(config.semantic_path + '/src/themes/' + config.semantic_theme + '/**')
-    .pipe(gulp.dest(config.asset_output + '/themes/' + config.semantic_theme));
+  gulp.src(config.semantic_path + '/src/themes/' + config.semantic_theme + '/assets/**')
+    .pipe(gulp.dest(config.asset_output + '/themes/' + config.semantic_theme + '/assets/'));
 });
 
 gulp.task('copy-mejs', function() {

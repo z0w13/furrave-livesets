@@ -14,6 +14,12 @@
       <td>{{ index $event.time 0 }} - {{ index $event.time 1 }}</td>
     </tr>
   {{ end }}
+  {{ if $event.aftermovie }}
+    <tr>
+      <td>Aftermovie:</td>
+      <td><a href="{{ $event.aftermovie }}">Watch</a></td>
+    </tr>
+  {{ end }}
 </table>
 
 {{ partial "set" (dict "data" $.Site.Data "set" . "type" "event" "slug" $.Slug) }}

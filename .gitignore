@@ -1,3 +1,7 @@
 node_modules
 public
-themes/furrave/static
+
+themes/furrave/static/assets/css
+themes/furrave/static/assets/img
+themes/furrave/static/assets/js
+themes/furrave/static/assets/mediaelement

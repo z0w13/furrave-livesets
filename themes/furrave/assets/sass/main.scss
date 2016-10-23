@@ -1,0 +1,135 @@
+$brand-primary: #ec5538 !default;
+
+@import "mixins/table-row";
+@import "variables";
+
+@import "bootstrap-reboot";
+@import "bootstrap-grid";
+
+@import "tables";
+
+@import "site-icons";
+@import "../../node_modules/mediaelement/src/css/mediaelementplayer";
+
+.mejs-controls .mejs-button button {
+	background-image: url('../mediaelement/controls.svg');
+}
+.no-svg .mejs-controls .mejs-button button {
+	background-image: url('../mediaelement/controls.png');
+}
+
+.mejs-controls .mejs-volume-button .mejs-volume-slider {
+  background-image: url('../mediaelement/background.png');
+}
+
+body {
+  background: url('../img/background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+table {
+  border-radius: 0.3rem;
+}
+
+.dj-info, .event-info {
+  width: auto;
+}
+
+tr:first-child td {
+  border-top: 0;
+}
+
+.livesets td.links, .livesets td.links a {
+  white-space: nowrap;
+}
+.livesets td.links {
+  width: 1%;
+  text-align: right;
+}
+
+.tracklist {
+  display: none;
+}
+.tracklist.expanded {
+  display: table-cell;
+}
+.tracklist ol {
+  padding-left: 0;
+}
+.tracklist li {
+  list-style: inside decimal;
+}
+
+#logo {
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.more-info {
+  height: 0px;
+  transition: height 0.5s ease;
+}
+
+.alt1 {
+  color: #ec5538;
+}
+
+#logo img {
+  padding-left: 13%;
+  max-width: 100%;
+}
+
+.inner-bg, #logo {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1.7em;
+}
+#sidebar, #content, #logo, #footer{
+  color: white;
+}
+
+#footer {
+  margin-top: 2em;
+  text-align: center;
+}
+
+h1, h2, #sidebar a {
+  font-family: 'Oswald';
+  letter-spacing: 1.5px;
+  font-weight: normal;
+}
+
+#sidebar a {
+  color: white;
+}
+
+#sidebar a:hover {
+  color: #EEE;
+  text-decoration: underline;
+}
+
+#sidebar {
+  font-size: 20px;
+  line-height: 130%;
+}
+
+#sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#sidebar h2 {
+  color: #ec5538;
+  font-size: 24px;
+  margin-bottom: 0.5rem;
+}
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+.mejs-controls .mejs-button button:focus {
+	outline: 0 !important;
+}
+
+audio {
+  width: 100%;
+}

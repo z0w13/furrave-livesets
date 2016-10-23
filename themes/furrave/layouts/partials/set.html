@@ -1,5 +1,5 @@
 <h2>Livesets</h2>
-<table class="ui inverted table livesets">
+<table class="table table-inverse livesets">
   {{ range $idx, $elem := .data.set }}
     {{ if or (and (eq $.type "dj") (eq $.slug .dj)) (and (eq $.type "event") (eq $.slug .event)) }}
       {{ $dj := index $.data.dj .dj }}
@@ -20,10 +20,10 @@
         {{ end }}
         <td class="links">
           {{ if isset . "tracklist" }}
-          <a class="toggle-tracklist" href="#tracklist-{{ $idx }}"><i class="list icon"></i></a>
+          <a class="toggle-tracklist" href="#tracklist-{{ $idx }}"><i class="icon-list"></i></a>
           {{ end }}
           {{ if isset . "download" }}
-            <a href="{{ .download }}"><i class="download icon"></i></a>
+            <a href="{{ .download }}"><i class="icon-download"></i></a>
           {{ end }}
         </td>
       </tr>

@@ -1,72 +1,49 @@
-var merge  = require('merge-stream'),
-    gulp   = require('gulp'),
-    jquery = require('gulp-jquery'),
-    concat = require('gulp-concat'),
-    clean  = require('./components/semantic/tasks/clean'),
-    watch  = require('./components/semantic/tasks/watch'),
-    build  = require('./components/semantic/tasks/build');
+const gulp       = require('gulp')
+const sass       = require('gulp-sass')
+const source     = require('vinyl-source-stream')
+const browserify = require('browserify')
 
-// import task with a custom task name
-gulp.task('watch-ui', watch);
-gulp.task('build-ui', build);
-gulp.task('clean-ui', clean);
-
-gulp.task('clean', ['clean-ui']);
-gulp.task('build', ['concat-js', 'concat-css', 'copy-theme', 'copy-static']);
-gulp.task('default', ['build']);
-
-var config = {
-  static_files: [
-    'components/site/static/**',
-  ],
-  mejs_files: [
-    'components/mediaelementjs/build/*.png',
-    'components/mediaelementjs/build/*.svg',
-    'components/mediaelementjs/build/*.gif',
-    'components/mediaelementjs/build/flashmediaelement.swf',
-  ],
-  js_files: [
-    'components/semantic/dist/semantic.js',
-    'components/site/site.js',
-    'components/mediaelementjs/build/mediaelement-and-player.js',
-  ],
-  css_files: [
-    'components/mediaelementjs/build/mediaelementplayer.css',
-    'components/semantic/dist/semantic.css',
-    'components/site/site.css',
-  ],
-
-  asset_output: 'static/assets',
-  js_output: 'site.js',
-  css_output: 'site.css',
-
-  semantic_path: 'components/semantic',
-  semantic_theme: 'default',
+const config = {
+  sass: {
+    includePaths: [
+      'node_modules/bootstrap/scss',
+      'assets/sass',
+    ],
+  },
+  css_entry: 'assets/sass/main.scss',
+  css_glob: 'assets/sass/**/*.scss',
+  js_entry: 'assets/js/main.js',
+  js_glob: 'assets/js/**/*.js',
 }
 
-gulp.task('concat-css', ['build-ui'], function() {
-  return gulp.src(config.css_files)
-    .pipe(concat(config.css_output))
-    .pipe(gulp.dest(config.asset_output));
-});
+gulp.task('js', function() {
+  browserify(config.js_entry)
+    .transform('babelify')
+    .bundle()
+    .pipe(source('main.js'))
+    .pipe(gulp.dest('static/assets/js'))
+})
 
-gulp.task('concat-js', ['build-ui'], function() {
-  return merge(jquery.src(), gulp.src(config.js_files))
-    .pipe(concat(config.js_output))
-    .pipe(gulp.dest(config.asset_output));
-});
+gulp.task('css', function() {
+  gulp
+    .src(config.css_entry)
+    .pipe(sass(config.sass).on('error', sass.logError))
+    .pipe(gulp.dest('static/assets/css'))
+})
 
-gulp.task('copy-theme', ['build-ui'], function() {
-  gulp.src(config.semantic_path + '/src/themes/' + config.semantic_theme + '/assets/**')
-    .pipe(gulp.dest(config.asset_output + '/themes/' + config.semantic_theme + '/assets/'));
-});
+gulp.task('static', function() {
+  gulp
+    .src([
+      "node_modules/mediaelement/build/controls.png",
+      "node_modules/mediaelement/build/controls.svg",
+      "node_modules/mediaelement/build/flashmediaelement.swf",
+      "node_modules/mediaelement/build/silverlightmediaelement.xap",
+    ])
+    .pipe(gulp.dest('static/assets/mediaelement'))
+})
 
-gulp.task('copy-mejs', function() {
-  return gulp.src(config.mejs_files)
-    .pipe(gulp.dest(config.asset_output));
-});
-
-gulp.task('copy-static', ['copy-mejs'], function() {
-  return gulp.src(config.static_files)
-    .pipe(gulp.dest(config.asset_output));
-});
+gulp.task('default', ['js', 'css', 'static'])
+gulp.task('watch', ['default'], function() {
+  gulp.watch(config.js_glob, ['js'])
+  gulp.watch(config.css_glob, ['css'])
+})

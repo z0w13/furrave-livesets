@@ -7,7 +7,7 @@
 
     <!-- Stylesheets -->
     <link href='https://fonts.googleapis.com/css?family=Oswald|Lato' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/assets/site.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
   </head>
   <body>
     <div id="logo">
@@ -15,10 +15,10 @@
         <img src="/assets/img/logo.png" alt="Furrave :: Livesets">
       </a>
     </div>
-    <div class="ui container">
-      <div class="ui stackable grid">
-        <div class="ui row">
-          <div class="ui four wide column" id="sidebar">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3" id="sidebar">
+          <div class="inner-bg">
             <h2>DJs</h2>
             <ul>
               {{ range .Site.Menus.djs }}
@@ -33,5 +33,6 @@
             </ul>
             <a href="http://furrave.nl"><h2>Official Site</h2></a>
           </div>
-          <div class="ui column"></div>
-          <div class="ui eleven wide column" id="content">
+        </div>
+        <div class="col-sm-9" id="content">
+          <div class="inner-bg">

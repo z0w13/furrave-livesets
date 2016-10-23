@@ -13,6 +13,7 @@ gulp.task('clean-ui', clean);
 
 gulp.task('clean', ['clean-ui']);
 gulp.task('build', ['concat-js', 'concat-css', 'copy-theme', 'copy-static']);
+gulp.task('default', ['build']);
 
 var config = {
   static_files: [

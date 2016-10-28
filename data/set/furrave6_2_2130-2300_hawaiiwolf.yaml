@@ -1,7 +1,7 @@
 dj: hawaiiwolf
 event: furrave6
 timeslot: ["21:30", "23:00"]
-download: "https://pebbles.stackstorage.com/index.php/s/QyeNdiKVWJGUGRP/download"
+download: "https://pebbles.stackstorage.com/s/QyeNdiKVWJGUGRP"
 player:
   type: mixcloud
   url: "https://www.mixcloud.com/Dutchfurrave/dutch-furrave-6-dj-hawaiiwolf/"

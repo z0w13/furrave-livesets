@@ -1,7 +1,9 @@
+const path       = require('path')
 const gulp       = require('gulp')
 const sass       = require('gulp-sass')
 const source     = require('vinyl-source-stream')
 const browserify = require('browserify')
+const replace    = require('gulp-replace')
 
 const config = {
   sass: {
@@ -10,6 +12,18 @@ const config = {
       'assets/sass',
     ],
   },
+  mediaelement_files: [
+    "node_modules/mediaelement/build/background.png",
+    "node_modules/mediaelement/build/bigplay.png",
+    "node_modules/mediaelement/build/bigplay.svg",
+    "node_modules/mediaelement/build/controls.png",
+    "node_modules/mediaelement/build/controls.svg",
+    "node_modules/mediaelement/build/flashmediaelement.swf",
+    "node_modules/mediaelement/build/jumpforward.png",
+    "node_modules/mediaelement/build/loading.gif",
+    "node_modules/mediaelement/build/silverlightmediaelement.xap",
+    "node_modules/mediaelement/build/skipback.png",
+  ],
   css_entry: 'assets/sass/main.scss',
   css_glob: 'assets/sass/**/*.scss',
   js_entry: 'assets/js/main.js',
@@ -25,20 +39,20 @@ gulp.task('js', function() {
 })
 
 gulp.task('css', function() {
-  gulp
-    .src(config.css_entry)
+  var stream = gulp.src(config.css_entry)
     .pipe(sass(config.sass).on('error', sass.logError))
-    .pipe(gulp.dest('static/assets/css'))
+
+  config.mediaelement_files.forEach(f => {
+    const fName = path.basename(f)
+    stream = stream.pipe(replace(fName, "../mediaelement/" + fName))
+  })
+
+  stream.pipe(gulp.dest('static/assets/css'))
 })
 
 gulp.task('static', function() {
   gulp
-    .src([
-      "node_modules/mediaelement/build/controls.png",
-      "node_modules/mediaelement/build/controls.svg",
-      "node_modules/mediaelement/build/flashmediaelement.swf",
-      "node_modules/mediaelement/build/silverlightmediaelement.xap",
-    ])
+    .src(config.mediaelement_files)
     .pipe(gulp.dest('static/assets/mediaelement'))
 })
 

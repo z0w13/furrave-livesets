@@ -11,17 +11,6 @@ $brand-primary: #ec5538 !default;
 @import "site-icons";
 @import "../../node_modules/mediaelement/src/css/mediaelementplayer";
 
-.mejs-controls .mejs-button button {
-	background-image: url('../mediaelement/controls.svg');
-}
-.no-svg .mejs-controls .mejs-button button {
-	background-image: url('../mediaelement/controls.png');
-}
-
-.mejs-controls .mejs-volume-button .mejs-volume-slider {
-  background-image: url('../mediaelement/background.png');
-}
-
 body {
   background: url('../img/background.jpg');
   background-size: cover;

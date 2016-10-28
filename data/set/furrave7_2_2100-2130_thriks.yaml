@@ -1,0 +1,7 @@
+dj: thriks
+event: furrave7
+timeslot: ["21:00", "21:30"]
+download: "http://furrave.nl/downloads/furrave7/livesets/FurRave%207%20DJ%20Thriks%20The%20Stratosphere.mp3"
+player: 
+  type: mixcloud
+  url: 'https://www.mixcloud.com/Dutchfurrave/furrave-7-dj-thriks-the-stratosphere/'

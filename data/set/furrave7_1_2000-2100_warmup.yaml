@@ -1,3 +1,7 @@
-dj: ???
+dj: code-y
 event: furrave7
 timeslot: ["20:00", "21:00"]
+download: "http://furrave.nl/downloads/furrave7/livesets/FurRave%207%20Warm%20Up%20Set%20The%20Troposphere(DJ%20Code-Y).mp3"
+player: 
+  type: mixcloud
+  url: 'https://www.mixcloud.com/Dutchfurrave/furrave-7-warm-up-set-the-troposphere/'

@@ -1,12 +1,12 @@
 name = "Furrave Livesets"
 license = "MIT"
-licenselink = "https://github.com/lynxpebbles/furrave/blob/master/LICENSE.md"
+licenselink = "https://github.com/zowie/furrave/blob/master/LICENSE.md"
 description = "Theme for the Furrave Livesets website"
-homepage = "http://siteforthistheme.com/"
+homepage = "https://zowie.im/"
 tags = ["", ""]
 features = ["", ""]
 min_version = 0.14
 
 [author]
-  name = "LynxPebbles"
-  homepage = "http://lynxpebbles.me"
+  name = "Zowie the Lynx"
+  homepage = "https://zowie.im"

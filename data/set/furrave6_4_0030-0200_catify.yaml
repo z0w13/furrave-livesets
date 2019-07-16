@@ -1,7 +1,7 @@
 dj: catify
 event: furrave6
 timeslot: ["00:30", "02:00"]
-download: "https://pebbles.stackstorage.com/s/YBW0cvkOwSLNxeK"
+download: "https://dl.zowie.im/furrave/6/DJ Catify - Live @ Furrave 6.mp3"
 player:
   type: mixcloud
   url: "https://www.mixcloud.com/Dutchfurrave/dutch-furrave-6-dj-catify/"

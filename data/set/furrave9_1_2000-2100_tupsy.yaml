@@ -1,0 +1,7 @@
+dj: tupsy
+event: furrave9
+timeslot: ["21:00", "22:00"]
+download: "https://dl.zowie.im/furrave/9/Tupsy - Live @ Furrave 9.mp3"
+player:
+  type: direct
+  url: "https://dl.zowie.im/furrave/9/Tupsy - Live @ Furrave 9.mp3"

@@ -1,7 +1,7 @@
 dj: macid
 event: furrave3
 timeslot: ["??:??", "??:??"]
-player: 
-  type: soundcloud
-  id: '170878487'
-download: 'https://api.soundcloud.com/tracks/170878487/download?client_id=02gUJC0hH2ct1EGOcYXQIzRFU91c72Ea'
+player:
+  type: direct
+  id: 'https://dl.zowie.im/furrave/3/DJ%20MaCiD%20-%20Live%20@%20Furrave%203.mp3'
+  download: 'https://dl.zowie.im/furrave/3/DJ%20MaCiD%20-%20Live%20@%20Furrave%203.mp3'

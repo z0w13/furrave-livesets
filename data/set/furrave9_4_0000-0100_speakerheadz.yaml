@@ -1,0 +1,7 @@
+dj: speakerheadz
+event: furrave9
+timeslot: ["00:00", "01:00"]
+download: "https://dl.zowie.im/furrave/9/Speakerheadz%20-%20Live%20@%20Furrave%209.mp3"
+player:
+  type: direct
+  url: "https://dl.zowie.im/furrave/9/Speakerheadz%20-%20Live%20@%20Furrave%209.mp3"

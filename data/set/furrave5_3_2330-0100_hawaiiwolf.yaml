@@ -3,8 +3,8 @@ event: furrave5
 timeslot: ["23:30", "01:00"]
 player:
   type: direct
-  url: http://www.hawaiiwolf.com/wp-content/uploads/2015/10/DJ_HawaiiWolf_-_Furrave_NL_5_Exclusive_Mix.mp3
-download: http://www.hawaiiwolf.com/wp-content/uploads/2015/10/DJ_HawaiiWolf_-_Furrave_NL_5_Exclusive_Mix.mp3
+  url: "https://dl.zowie.im/furrave/5/DJ HawaiiWolf - Live @ Furrave 5.mp3"
+download: "https://dl.zowie.im/furrave/5/DJ HawaiiWolf - Live @ Furrave 5.mp3"
 tracklist:
   - "Martin Solveig - Hello (Eric Mullder Bootleg)"
   - "Sam Walkertone - Feeling Liberty (Addicted Craze Remix)"

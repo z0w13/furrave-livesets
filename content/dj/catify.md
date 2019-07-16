@@ -1,5 +1,5 @@
 ---
-title: DJ Catify
+title: Catify
 menu: "djs"
 slug: catify
 ---

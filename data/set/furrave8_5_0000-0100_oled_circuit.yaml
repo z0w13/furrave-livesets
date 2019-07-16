@@ -1,0 +1,7 @@
+dj: oled-circuit
+event: furrave8
+timeslot: ["00:00", "01:00"]
+download: "https://dl.zowie.im/furrave/8/DJ%20Oled%20Circuit%20-%20Insert%20Title%20Here%20Mix%20(Live%20@%20Furrave%208).mp3"
+player:
+  type: direct
+  url: "https://dl.zowie.im/furrave/8/DJ%20Oled%20Circuit%20-%20Insert%20Title%20Here%20Mix%20(Live%20@%20Furrave%208).mp3"

@@ -1,8 +1,8 @@
 dj: ihaveahat
 event: furrave2
 timeslot: ["22:30", "23:30"]
-download: "https://dl.dropboxusercontent.com/s/favwajabb2bo27d/DJ%20IHaveAHat%20-%20Live%20%40%20Furrave%202%20%282230-2330%29.mp3?dl=0"
-player: 
+download: "https://dl.zowie.im/furrave/2/DJ%20IHaveAHat%20-%20Live%20@%20Furrave%202%20(2230-2330).mp3"
+player:
   type: mixcloud
   url: 'https://www.mixcloud.com/ihaveahat/dj-ihaveahat-live-furrave-2-2230-2330/'
 genres:
@@ -27,6 +27,6 @@ tracklist:
   - "Ray Silver - Happy People (Cc.k Remix)"
   - "DJ Gollum & Empyre One - The Bad Touch (Empyre One Remix)"
   - "Sonic Bass - Black Pearl (Basslouder Remix)"
-  - "Nayer Ft. Pitbull - Suavemente (Basslouder Bootleg)" 
+  - "Nayer Ft. Pitbull - Suavemente (Basslouder Bootleg)"
   - "Dj Sequenza - C U 2Nite"
 

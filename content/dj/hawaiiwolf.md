@@ -1,5 +1,5 @@
 ---
-title: DJ HawaiiWolf
+title: HawaiiWolf
 menu: "djs"
 slug: hawaiiwolf
 ---

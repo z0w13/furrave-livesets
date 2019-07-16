@@ -1,8 +1,8 @@
 dj: catify
 event: furrave5
 timeslot: ["01:00", "02:15"]
-download: "http://catify.net/mixes/furrave5.mp3"
-player: 
+download: "https://dl.zowie.im/furrave/5/DJ Catify - Live @ Furrave 5.mp3"
+player:
   type: mixcloud
   uuid: f1937b87-eb7b-40c2-9624-58a62473f375
   url: 'https://www.mixcloud.com/Catify/furrave-5-liveset/'

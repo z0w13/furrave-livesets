@@ -2,7 +2,6 @@
 <table class="table table-inverse livesets">
   {{ range $idx, $elem := .data.set }}
     {{ if or (and (eq $.type "dj") (eq $.slug .dj)) (and (eq $.type "event") (eq $.slug .event)) }}
-      {{ $dj := index $.data.dj .dj }}
       {{ $event := index $.data.event .event }}
       <tr>
         {{ if eq $.type "dj" }}
@@ -10,13 +9,28 @@
         {{ end }}
         <td>{{ index .timeslot 0 }} - {{ index .timeslot 1 }}</td>
         {{ if eq $.type "event" }}
-          <td>
-            {{ if $dj.hide }}
-              {{ $dj.name }}
-            {{ else }}
-              <a name="tracklist-{{ $idx }}" href="/dj/{{ .dj }}/">{{ $dj.name }}</a>
-            {{ end }}
-          </td>
+          {{ if reflect.IsSlice .dj }}
+            <td>
+              {{ $lastDj := index (last 1 .dj) 0 }}
+              {{ range $djSlug := .dj }}
+                {{ $dj := index $.data.dj $djSlug }}
+                  {{ if $dj.hide }}
+                    {{ $dj.name }}
+                  {{ else }}
+                    <a class="dj-link" name="tracklist-{{ $idx }}" href="/dj/{{ $djSlug }}/">{{ $dj.name }}</a>{{ if ne $lastDj $djSlug }},{{ end }}
+                  {{ end }}
+              {{ end }}
+            </td>
+          {{ else }}
+            {{ $dj := index $.data.dj .dj }}
+            <td>
+              {{ if $dj.hide }}
+                {{ $dj.name }}
+              {{ else }}
+                <a name="tracklist-{{ $idx }}" href="/dj/{{ .dj }}/">{{ $dj.name }}</a>
+              {{ end }}
+            </td>
+          {{ end }}
         {{ end }}
         <td class="links">
           {{ if isset . "tracklist" }}

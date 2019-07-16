@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Events on Home</title>
+    <link>https://furrave.zowi.ee/event/</link>
+    <description>Recent content in Events on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 02 Feb 2019 21:40:23 +0100</lastBuildDate>
+    <atom:link href="https://furrave.zowi.ee/event/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Furrave 9</title>
+      <link>https://furrave.zowi.ee/event/furrave9/</link>
+      <pubDate>Sat, 02 Feb 2019 21:40:23 +0100</pubDate>
+      <guid>https://furrave.zowi.ee/event/furrave9/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Furrave 8</title>
+      <link>https://furrave.zowi.ee/event/furrave8/</link>
+      <pubDate>Fri, 09 Feb 2018 21:40:23 +0100</pubDate>
+      <guid>https://furrave.zowi.ee/event/furrave8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Furrave 7</title>
+      <link>https://furrave.zowi.ee/event/furrave7/</link>
+      <pubDate>Fri, 14 Oct 2016 21:40:23 +0100</pubDate>
+      <guid>https://furrave.zowi.ee/event/furrave7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Furrave 6</title>
+      <link>https://furrave.zowi.ee/event/furrave6/</link>
+      <pubDate>Sat, 07 May 2016 21:40:23 +0100</pubDate>
+      <guid>https://furrave.zowi.ee/event/furrave6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Furrave 3</title>
+      <link>https://furrave.zowi.ee/event/furrave3/</link>
+      <pubDate>Tue, 27 Oct 2015 21:40:23 +0100</pubDate>
+      <guid>https://furrave.zowi.ee/event/furrave3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Furrave 4</title>
+      <link>https://furrave.zowi.ee/event/furrave4/</link>
+      <pubDate>Tue, 27 Oct 2015 21:40:23 +0100</pubDate>
+      <guid>https://furrave.zowi.ee/event/furrave4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Furrave 5</title>
+      <link>https://furrave.zowi.ee/event/furrave5/</link>
+      <pubDate>Tue, 27 Oct 2015 21:40:23 +0100</pubDate>
+      <guid>https://furrave.zowi.ee/event/furrave5/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Summer is Magic</title>
+      <link>https://furrave.zowi.ee/event/furrave-summer-is-magic/</link>
+      <pubDate>Tue, 27 Oct 2015 21:35:23 +0100</pubDate>
+      <guid>https://furrave.zowi.ee/event/furrave-summer-is-magic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Furrave 1</title>
+      <link>https://furrave.zowi.ee/event/furrave1/</link>
+      <pubDate>Tue, 27 Oct 2015 21:30:23 +0100</pubDate>
+      <guid>https://furrave.zowi.ee/event/furrave1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Furrave 2</title>
+      <link>https://furrave.zowi.ee/event/furrave2/</link>
+      <pubDate>Tue, 27 Oct 2015 21:30:23 +0100</pubDate>
+      <guid>https://furrave.zowi.ee/event/furrave2/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

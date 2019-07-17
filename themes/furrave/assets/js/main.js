@@ -1,14 +1,6 @@
 import $ from 'jquery'
 
-window.jQuery = window.$ = $
-require('mediaelement/build/mediaelement-and-player')
-
 $(document).ready(function() {
-  $('video,audio').mediaelementplayer({
-    alwaysShowHours: true,
-    pluginPath: '/assets/mediaelement/',
-  })
-
   $('.toggle-tracklist').on('click', function(evt) {
     let tracklistId = $(this).attr('href')
     let $tracklist = $(tracklistId)
@@ -20,6 +12,7 @@ $(document).ready(function() {
       $tracklist.addClass('expanded')
       $(window).scrollTop($anchor.offset().top - 10)
     }
+
     return false
   })
 })

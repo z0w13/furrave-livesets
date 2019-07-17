@@ -1,5 +1,5 @@
 <h2>Livesets</h2>
-<table class="table table-inverse livesets">
+<table class="table table-dark livesets">
   {{ range $idx, $elem := .data.set }}
     {{ if or (and (eq $.type "dj") (eq $.slug .dj)) (and (eq $.type "event") (eq $.slug .event)) }}
       {{ $event := index $.data.event .event }}

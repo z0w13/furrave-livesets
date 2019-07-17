@@ -1,7 +1,7 @@
 {{ partial "header" . }}
 {{ $dj := index .Site.Data.dj .Slug }}
 <h1><span class="alt1">DJ</span> // {{ .Title }}</h1>
-<table class="table table-inverse table-striped dj-info">
+<table class="table table-dark table-striped dj-info">
   {{ if $dj.aka }}
     <tr>
       <td>A.K.A.:</td>

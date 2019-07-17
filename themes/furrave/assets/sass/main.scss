@@ -1,15 +1,14 @@
-$brand-primary: #ec5538 !default;
+$primary: #ec5538 !default;
 
-@import "mixins/table-row";
-@import "variables";
 
 @import "bootstrap-reboot";
 @import "bootstrap-grid";
 
+@import "mixins/table-row";
+@import "variables";
 @import "tables";
 
 @import "site-icons";
-@import "../../node_modules/mediaelement/src/css/mediaelementplayer";
 
 body {
   background: url('../img/background.jpg');

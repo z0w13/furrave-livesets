@@ -1,7 +1,7 @@
 dj: code-y
 event: furrave7
 timeslot: ["20:00", "21:00"]
-download: "https://dl.zowie.im/furrave/7/Furrave 7 - 01 - DJ Code-Y - The Troposphere (Warm-up Set).mp3"
+download: "https://dl.zowi.ee/furrave/7/Furrave 7 - 01 - DJ Code-Y - The Troposphere (Warm-up Set).mp3"
 player:
   type: mixcloud
   url: 'https://www.mixcloud.com/Dutchfurrave/furrave-7-warm-up-set-the-troposphere/'

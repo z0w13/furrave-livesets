@@ -1,7 +1,7 @@
 dj: catify
 event: furrave7
 timeslot: ["01:00", "02:00"]
-download: "https://dl.zowie.im/furrave/7/Furrave 7 - 05 - DJ Catify - The Exosphere.mp3"
+download: "https://dl.zowi.ee/furrave/7/Furrave 7 - 05 - DJ Catify - The Exosphere.mp3"
 player:
   type: mixcloud
   url: 'https://www.mixcloud.com/Dutchfurrave/furrave-7-dj-catify-the-exosphere/'

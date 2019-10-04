@@ -1,7 +1,7 @@
 dj: dropshot
 event: furrave8
 timeslot: ["23:00", "24:00"]
-download: "https://dl.zowie.im/furrave/8/DJ Dropshot - Handsup Mix (Live @ Furrave 8).mp3"
+download: "https://dl.zowi.ee/furrave/8/DJ Dropshot - Handsup Mix (Live @ Furrave 8).mp3"
 player:
   type: direct
-  url: "https://dl.zowie.im/furrave/8/DJ Dropshot - Handsup Mix (Live @ Furrave 8).mp3"
+  url: "https://dl.zowi.ee/furrave/8/DJ Dropshot - Handsup Mix (Live @ Furrave 8).mp3"

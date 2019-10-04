@@ -1,7 +1,7 @@
 dj: catify
 event: furrave9
 timeslot: ["01:00", "02:00"]
-download: "https://dl.zowie.im/furrave/9/DJ Catify - Live @ Furrave 9.mp3"
+download: "https://dl.zowi.ee/furrave/9/DJ Catify - Live @ Furrave 9.mp3"
 player:
   type: direct
-  url: "https://dl.zowie.im/furrave/9/DJ Catify - Live @ Furrave 9.mp3"
+  url: "https://dl.zowi.ee/furrave/9/DJ Catify - Live @ Furrave 9.mp3"

@@ -3,5 +3,5 @@ event: furrave3
 timeslot: ["??:??", "??:??"]
 player:
   type: direct
-  id: 'https://dl.zowi.ee/furrave/3/DJ%20MaCiD%20-%20Live%20@%20Furrave%203.mp3'
-  download: 'https://dl.zowi.ee/furrave/3/DJ%20MaCiD%20-%20Live%20@%20Furrave%203.mp3'
+  id: 'https://dl.furrave.com/furrave/3/DJ%20MaCiD%20-%20Live%20@%20Furrave%203.mp3'
+  download: 'https://dl.furrave.com/furrave/3/DJ%20MaCiD%20-%20Live%20@%20Furrave%203.mp3'

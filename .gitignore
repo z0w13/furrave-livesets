@@ -1,6 +1,8 @@
 node_modules
 public
 
+*.lock
+
 themes/furrave/static/assets/css
 themes/furrave/static/assets/img
 themes/furrave/static/assets/js

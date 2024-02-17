@@ -12,8 +12,9 @@
     "browserify-shim": "^3.8.14",
     "gulp": "^4.0.2",
     "gulp-replace": "^1.0.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^5.1.0",
     "jquery": "^3.4.1",
+    "sass": "^1.71.0",
     "vinyl-source-stream": "^2.0.0"
   },
   "devDependencies": {},

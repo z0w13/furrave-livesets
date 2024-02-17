@@ -1,6 +1,6 @@
 const path       = require('path')
 const gulp       = require('gulp')
-const sass       = require('gulp-sass')
+const sass       = require('gulp-sass')(require('sass'));
 const source     = require('vinyl-source-stream')
 const browserify = require('browserify')
 const replace    = require('gulp-replace')

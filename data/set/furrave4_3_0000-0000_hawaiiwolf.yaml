@@ -3,8 +3,8 @@ event: furrave4
 timeslot: ["??:??", "??:??"]
 player:
   type: direct
-  url: 'https://dl.furrave.com/furrave/4/DJ HawaiiWolf - Live @ Furrave 4.mp3'
-download: 'https://dl.furrave.com/furrave/4/DJ HawaiiWolf - Live @ Furrave 4.mp3'
+  url: 'https://dl.zowi.ee/furrave/4/DJ HawaiiWolf - Live @ Furrave 4.mp3'
+download: 'https://dl.zowi.ee/furrave/4/DJ HawaiiWolf - Live @ Furrave 4.mp3'
 tracklist:
   - "StarRadioNY - Sound Effects - DJ Tools - Show Opener"
   - "John Newman - Love Me Again (Re-Con & Klubfiller Remix)"

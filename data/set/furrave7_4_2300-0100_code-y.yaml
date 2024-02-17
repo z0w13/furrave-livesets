@@ -1,7 +1,7 @@
 dj: code-y
 event: furrave7
 timeslot: ["23:00", "01:00"]
-download: "https://dl.furrave.com/furrave/7/Furrave 7 - 04 - DJ Code-Y - The Thermosphere.mp3"
+download: "https://dl.zowi.ee/furrave/7/Furrave 7 - 04 - DJ Code-Y - The Thermosphere.mp3"
 player:
   type: mixcloud
   url: 'https://www.mixcloud.com/Dutchfurrave/furrave-7-dj-code-y-the-thermosphere/'

@@ -1,7 +1,7 @@
 dj: thriks
 event: furrave7
 timeslot: ["21:00", "21:30"]
-download: "https://dl.furrave.com/furrave/7/Furrave 7 - 02 - DJ Thriks - The Stratosphere.mp3"
+download: "https://dl.zowi.ee/furrave/7/Furrave 7 - 02 - DJ Thriks - The Stratosphere.mp3"
 player:
   type: mixcloud
   url: 'https://www.mixcloud.com/Dutchfurrave/furrave-7-dj-thriks-the-stratosphere/'

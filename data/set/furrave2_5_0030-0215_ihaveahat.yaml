@@ -1,7 +1,7 @@
 dj: ihaveahat
 event: furrave2
 timeslot: ["00:30", "02:15"]
-download: "https://dl.furrave.com/furrave/2/DJ%20IHaveAHat%20-%20Live%20@%20Furrave%202%20(0030-0215).mp3"
+download: "https://dl.zowi.ee/furrave/2/DJ%20IHaveAHat%20-%20Live%20@%20Furrave%202%20(0030-0215).mp3"
 player:
   type: mixcloud
   url: https://www.mixcloud.com/ihaveahat/dj-ihaveahat-live-furrave-2-0030-0215/

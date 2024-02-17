@@ -1,7 +1,7 @@
 dj: emmerik
 event: furrave6
 timeslot: ["20:00", "21:30"]
-download: "https://dl.furrave.com/furrave/6/DJ Emmerik - Live @ Furrave 6.mp3"
+download: "https://dl.zowi.ee/furrave/6/DJ Emmerik - Live @ Furrave 6.mp3"
 player:
   type: mixcloud
   url: "https://www.mixcloud.com/Dutchfurrave/dutch-furrave-6-dj-emmerik/"
